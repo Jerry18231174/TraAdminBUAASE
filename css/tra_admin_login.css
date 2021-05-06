@@ -1,0 +1,126 @@
+.login{
+  height: 100vh
+}
+
+.login .login-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -275px;
+  margin-left: -250px;
+}
+
+.login .login-container .login-page{
+  width: 500px;
+  height: 470px;
+  line-height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .4);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .4);
+  padding-top: 52px;
+}
+
+.login .login-container .login-page .title{
+  margin-left: 94px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  width: 312px;
+  height: 36px;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  font-family: SourceHanSansSC-regular;
+}
+
+.login .login-container .login-page .subtitle{
+  margin-left: 223px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  width: 54px;
+  height: 27px;
+  color: #666;
+  font-size: 18px;
+  text-align: center;
+  font-family: SourceHanSansSC-regular;
+}
+
+.login .login-container .login-page .email input{
+  text-indent: 16px;
+  left: 570px;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #fbfbfb;
+  color: #bbb;
+  font-size: 16px;
+  text-align: left;
+  font-family: Microsoft Yahei;
+  border: 1px solid #ddd;
+}
+
+.login .login-container .login-page .password input{
+  text-indent: 16px;
+  left: 570px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #fbfbfb;
+  color: #bbb;
+  font-size: 16px;
+  text-align: left;
+  font-family: Microsoft Yahei;
+  border: 1px solid #ddd
+}
+
+.login .login-container .login-page .verification{
+  text-align: center;
+}
+
+.login .login-container .login-page .verification .verificationcode input{
+  text-indent: 16px;
+  margin-left: 100px;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #fbfbfb;
+  color: #bbb;
+  font-size: 16px;
+  text-align: left;
+  font-family: Microsoft Yahei;
+  border: 1px solid #ddd;
+  float: left;
+  margin-right: 18px;
+}
+
+.login .login-container .login-page .verification .verificationimg{
+  margin-top: 2px;
+  width: 160px;
+  height: 50px;
+  float: left;
+  background-color: #0f66b9;
+}
+.login .login-container .login-page .login{
+  left: 570px;
+  margin-top: 42px;
+  width: 300px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #2191fb;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  font-family: Microsoft Yahei;
+}
+.login .login-container .login-page .regist{
+  margin-bottom: 94px;
+  width: 64px;
+  height: 24px;
+  color: #2191fb;
+  font-size: 16px;
+  text-align: center;
+  font-family: SourceHanSansSC-regular;
+}

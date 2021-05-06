@@ -1,0 +1,185 @@
+/* top bar style */
+
+.login-bar {
+  width: 100%;
+  background-color: #ddd;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 999;
+
+  color: #101010;
+  font-weight: 700;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 50px;
+
+  font-size: 20px;
+  text-decoration: none;
+  padding: 8px 24px;
+}
+
+.admin-name {
+  right: 150px;
+  width: 200px;
+
+  color: #101010;
+  font-size: 16px;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  background-color: #ddd;
+  line-height: 60px;
+  text-align: center
+}
+
+.logout {
+  right: 50px;
+  width: 100px;
+  cursor: pointer;
+
+  color: #101010;
+  font-size: 16px;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  background-color: #ddd;
+  line-height: 60px;
+  text-align: center
+}
+
+/* menu style */
+
+.menu {
+  width: 0;
+  bottom: auto;
+  float: left;
+  position: relative;
+}
+
+.menu-item {
+  color: #333;
+  background-color: #f0f0f0;
+
+  margin-top: 10px;
+  margin-bottom: 1px;
+  float: left;
+  position: relative;
+
+  height: 50px;
+  width: 150px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 50px;
+}
+
+.menu-item-top {
+  margin-top: 100px;
+}
+
+.menu-item-selected {
+  background-color: #e4f2ff;
+  color: #2191fb;
+}
+
+/* panel style */
+
+.panel {
+  color: #333;
+
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-bottom: 12px;
+  font-weight: 400;
+
+  float: left;
+  position: relative;
+  padding: 30px;
+
+  height: auto;
+  width: 1200px;
+  left: 100px;
+  line-height: 36px;
+  text-align: left;
+  font-size: 24px;
+  font-family: Microsoft Yahei, serif;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.select-bar {
+  float: left;
+  width: 630px;
+  font-size: 16px;
+}
+
+.select-elem {
+  padding-left: 10px;
+}
+
+.search-bar {
+  float: left;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+.search {
+  color: #bbb;
+
+  height: 35px;
+  width: 300px;
+  left: 50px;
+
+  padding-left: 10px;
+
+  font-size: 16px;
+  text-align: left;
+  font-family: Microsoft Yahei, serif;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.btn {
+  margin-left: 10px;
+  width: 80px;
+  height: 39px;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+  color: #101010;
+  font-size: 16px;
+  text-align: center;
+  font-family: Microsoft Yahei, serif;
+  border: 1px solid #ddd
+}
+
+.table-wrapper {
+  width: 1150px;
+  position: relative;
+  margin-top: 80px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+}
+
+.journal-table {
+  width: 100%;
+}
+
+.table-header-line {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 400;
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.table-body-line {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 30px;
+}
+

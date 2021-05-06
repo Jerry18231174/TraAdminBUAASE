@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>游迹-管理端审核页面</title>
+  <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="../js/tra_admin_examine.js"></script>
+  <script type="module" src="../js/js.cookie.js"></script>
+  <link rel="stylesheet" href="../css/tra_admin_home.css"/>
+  <link rel="stylesheet" href="../css/tra_admin_examine.css"/>
+</head>
+
+<body>
+  <div class="login-bar">
+    <span class="sys-title">游迹——管理端审核页面</span>
+    <span class="admin-name">您好！tra-we-1</span>
+    <span class="logout" id="logout">退出登录</span>
+  </div>
+  <div class="menu">
+    <div class="menu-item menu-item-top menu-item-selected" id="journal-list">返回列表</div>
+    <div class="menu-item" id="last-tra">上一篇</div>
+    <div class="menu-item" id="next-tra">下一篇</div>
+  </div>
+  <div class="panel">
+    <div class="tra-basic-info">
+      <div class="tra-elem" id="tra-title">游记名称：</div>
+      <div class="tra-elem" id="tra-author">作者ID：</div>
+      <div class="tra-elem" id="tra-publish-time">发布时间：</div>
+      <div class="tra-elem" id="tra-publish-site">发布地点：</div>
+      <div class="tra-elem" id="tra-examine-status">审核状态：</div>
+      <div class="tra-elem" id="tra-star-status">是否已收藏：</div>
+      <div class="tra-elem" id="tra-tipOff-status">是否被举报：</div>
+    </div>
+    <div id="tra-full-content">游记内容：</div>
+    <div id="tra-likedBy-user">点赞用户：</div>
+    <div id="tra-commentedBy-user">评论用户：</div>
+    <div>
+      <input type="radio" class="suggestion-radio" id="tra-delete" name="suggestion">删除游记
+      <input type="radio" class="suggestion-radio" id="tra-return" name="suggestion">退回整改
+      <input type="radio" class="suggestion-radio" id="tra-pass" name="suggestion">审核通过
+
+      <input type="text" placeholder="请输入处理意见" class="suggestion-text" id="admin-suggestion">
+      <button class="btn" id="suggestion-btn">确认</button>
+      <br>
+      <input type="checkbox" class="suggestion-checkbox" id="tra-star">收藏游记
+    </div>
+  </div>
+</body>
+</html>

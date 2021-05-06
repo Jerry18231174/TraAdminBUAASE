@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>游迹-管理端主页</title>
+  <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="../js/tra_admin_home.js"></script>
+  <script type="module" src="../js/js.cookie.js"></script>
+  <link rel="stylesheet" href="../css/tra_admin_home.css"/>
+</head>
+
+<body>
+  <div class="login-bar">
+    <span class="sys-title">游迹——管理端主页</span>
+    <span class="admin-name">您好！tra-we-1</span>
+    <span class="logout" id="logout">退出登录</span>
+  </div>
+  <div class="menu">
+    <div class="menu-item menu-item-top menu-item-selected" id="journal-list">游记列表</div>
+    <div class="menu-item" id="tipOff-todo">待处理的举报</div>
+  </div>
+  <div class="panel">
+    <div class="select-bar">
+      <span class="select-elem">时间</span>
+      <span>从</span>
+      <input type="date" id="start-date" />
+      <span>到</span>
+      <input type="date" id="end-date" />
+      <span class="select-elem">点赞数</span>
+      <select id="likes-num">
+        <option value ="no-limit">无限制</option>
+        <option value ="0-10">0-10</option>
+        <option value="11-100">11-100</option>
+        <option value="101-1000">101-1000</option>
+        <option value="1001-10000">1001-1w</option>
+        <option value="1w+">1w+</option>
+      </select>
+      <br>
+      <span class="select-elem">评论数</span>
+      <select id="comment-num">
+        <option value ="no-limit">无限制</option>
+        <option value ="0-10">0-10</option>
+        <option value="11-100">11-100</option>
+        <option value="101-1000">101-1000</option>
+        <option value="1000+">1000+</option>
+      </select>
+      <span class="select-elem">是否收藏</span>
+      <select id="if-starred">
+        <option value ="no-limit">无限制</option>
+        <option value ="yes">是</option>
+        <option value ="no">否</option>
+      </select>
+      <span class="select-elem">是否审核过</span>
+      <select id="if-inspected">
+        <option value ="no-limit">无限制</option>
+        <option value ="yes">是</option>
+        <option value ="no">否</option>
+      </select>
+      <span class="select-elem">是否举报中</span>
+      <select id="if-tipping-off">
+        <option value ="no-limit">无限制</option>
+        <option value ="yes">是</option>
+        <option value ="no">否</option>
+      </select>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="游记题目" class="search" id="search-content">
+      <button class="btn" id="search-btn">查找</button>
+    </div>
+    <div class="table-wrapper">
+      <table class="journal-table">
+        <colgroup>
+          <col name="header-title" width="120">
+          <col name="header-content" width="200">
+          <col name="header-userId" width="100">
+          <col name="header-releaseTime" width="100">
+          <col name="header-releaseLocation" width="100">
+          <col name="header-inspectStatus" width="70">
+          <col name="header-star" width="70">
+          <col name="header-likes" width="70">
+          <col name="header-comments" width="70">
+          <col name="header-tipOff" width="70">
+        </colgroup>
+        <thead>
+        <tr class="table-header-line">
+          <th colspan="1" rowspan="1" class="table-header-elem">
+            <div class="cell">游记名称</div>
+          </th>
+          <th colspan="1" rowspan="1" class="table-header-elem">
+            <div class="cell">内容概要</div>
+          </th>
+          <th colspan="1" rowspan="1" class="table-header-elem">
+            <div class="cell">用户名称</div>
+          </th>
+          <th colspan="1" rowspan="1" class="table-header-elem">
+            <div class="cell">发布时间</div>
+          </th>
+          <th colspan="1" rowspan="1" class="table-header-elem">
+            <div class="cell">发布地点</div>
+          </th>
+          <th colspan="1" rowspan="1" class="table-header-elem">
+            <div class="cell">审核状态</div>
+          </th>
+          <th colspan="1" rowspan="1" class="table-header-elem">
+            <div class="cell">收藏状态</div>
+          </th>
+          <th colspan="1" rowspan="1" class="table-header-elem">
+            <div class="cell">点赞数</div>
+          </th>
+          <th colspan="1" rowspan="1" class="table-header-elem">
+            <div class="cell">评论数</div>
+          </th>
+          <th colspan="1" rowspan="1" class="table-header-elem">
+            <div class="cell">举报状态</div>
+          </th>
+        </tr>
+        </thead>
+        <tbody id="tra-table-elem">
+        <tr class="table-body-line">
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">1</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496 464564d</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+        </tr>
+        <tr class="table-body-line">
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">1</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+          <td rowspan="1" colspan="1" class="table-body-elem">
+            <div class="cell">57496</div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
