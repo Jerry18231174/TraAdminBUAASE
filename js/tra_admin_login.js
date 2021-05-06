@@ -1,4 +1,4 @@
-baseUrl = "http://114.115.170.135/user/";
+baseUrl = "https://114.115.170.135/user/";
 
 
 $(document).ready(function() {
